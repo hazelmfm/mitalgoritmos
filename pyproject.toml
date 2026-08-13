@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music__player"
+version = "1.0.0"
+description = "Tkinter and pygame.mixer desktop music player for local MP3 folders."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pygame-ce>=2.5.8"]
+authors = [{ name = "music__player" }]
+
+[project.scripts]
+music__player = "music_player:main"
+
+[tool.setuptools]
+py-modules = ["music_player"]
